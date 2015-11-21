@@ -6,7 +6,7 @@ int stop_while = 1;
 int delay_time = 100;
 void listener(const uint8_t byte) {
 	switch(byte) {
-		case 'w':
+		case 'c':
 			tft_prints(1,1,"Yay Forward LA");
 			tft_update(); 
 			motor_control(1,1,100);
